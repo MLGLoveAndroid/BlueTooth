@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.UdpActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="a"></Button>
+
+        <Button
+            android:id="@+id/b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="b"></Button>
+
+        <Button
+            android:id="@+id/c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="c"></Button>
+
+        <Button
+            android:id="@+id/d"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="d"></Button>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/e"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="e"></Button>
+
+        <Button
+            android:id="@+id/f"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="f"></Button>
+
+        <Button
+            android:id="@+id/g"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="g"></Button>
+
+        <Button
+            android:id="@+id/h"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="h"></Button>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/发送信息_textView"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/send_textView"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:background="#e6e6e6"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/接收信息_textView"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/receive_textView"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:background="#e6e6e6"
+            android:textIsSelectable="true"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp">
+
+            <EditText
+                android:id="@+id/send_editText"
+                android:layout_width="240dp"
+                android:layout_height="match_parent"
+                android:background="#e6e6e6"
+                android:hint="@string/需要发送的信息_editText" />
+
+            <Button
+                android:id="@+id/send_btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:background="#6699ff"
+                android:text="@string/send_btn"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

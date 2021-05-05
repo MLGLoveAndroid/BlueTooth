@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/b1"
+    tools:context="com.mlg.obu.Main2Activity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/image"
+        ></ImageView>
+
+<!--
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/b2">
+
+
+        <ImageView
+            android:id="@+id/icon_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="25dp"
+            android:src="@mipmap/ic_arrow_back"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints"></ImageView>
+
+        <TextView
+            android:textColor="#1e1e1e"
+            android:id="@+id/lit"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="信号灯信息"
+            android:layout_marginTop="25dp"
+            android:textSize="18dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints"></TextView>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="25dp"
+            android:src="@mipmap/ic_sysbar_menu"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginRight="25dp"
+            app:layout_goneMarginTop="25dp"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:ignore="MissingConstraints"></ImageView>
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="200dp"
+            android:src="@mipmap/zhuzi"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="0dp"></ImageView>
+
+        <ImageView
+            android:src="@mipmap/dp"
+            android:id="@+id/image1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="70dp"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/image2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="70dp"
+            android:src="@mipmap/dp"
+            app:layout_constraintLeft_toRightOf="@+id/image1"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:src="@mipmap/dp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="70dp"
+            tools:ignore="MissingConstraints"
+            android:id="@+id/TextView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="30dp"
+            app:layout_constraintLeft_toRightOf="@+id/image2"
+            app:layout_constraintRight_toRightOf="parent" />
+
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/dpd"
+            android:layout_marginTop="80dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="40dp"
+            tools:ignore="MissingConstraints"></ImageView>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/redlefit"
+            android:layout_marginTop="80dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="40dp"
+            tools:ignore="MissingConstraints"></ImageView>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/dpd"
+            android:layout_marginTop="155dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="40dp"
+            tools:ignore="MissingConstraints"></ImageView>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/redlefit"
+            android:layout_marginTop="155dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="40dp"
+            tools:ignore="MissingConstraints"></ImageView>
+
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/dpd"
+            android:layout_marginTop="230dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="40dp"
+            tools:ignore="MissingConstraints"></ImageView>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/greenleft"
+            android:layout_marginTop="230dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="35dp"
+            tools:ignore="MissingConstraints"></ImageView>
+
+        <com.mlg.obu.Utils.LEDView
+            android:id="@+id/led1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="310dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="55dp"
+            >
+        </com.mlg.obu.Utils.LEDView>
+
+
+
+
+        &lt;!&ndash;aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa&ndash;&gt;
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/dpd"
+            android:layout_marginTop="80dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="150dp"
+            tools:ignore="MissingConstraints"></ImageView>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/redyuan"
+            android:layout_marginTop="70dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="140dp"
+            tools:ignore="MissingConstraints"></ImageView>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/dpd"
+            android:layout_marginTop="155dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="150dp"
+            tools:ignore="MissingConstraints"></ImageView>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/redlefit"
+            android:layout_marginTop="155dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="150dp"
+            tools:ignore="MissingConstraints"></ImageView>
+
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/dpd"
+            android:layout_marginTop="230dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="150dp"
+            tools:ignore="MissingConstraints"></ImageView>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/greenyuan"
+            android:layout_marginTop="220dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="140dp"
+            tools:ignore="MissingConstraints"></ImageView>
+
+        <com.mlg.obu.Utils.LEDView
+            android:id="@+id/led2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="310dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="145dp"
+            >
+        </com.mlg.obu.Utils.LEDView>
+        &lt;!&ndash;aaaaaaaaaaaaaaaaaaaaaaaaaaa&ndash;&gt;
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/dpd"
+            android:layout_marginTop="80dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="255dp"
+            tools:ignore="MissingConstraints"></ImageView>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/redright"
+            android:layout_marginTop="80dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="250dp"
+            tools:ignore="MissingConstraints"></ImageView>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/dpd"
+            android:layout_marginTop="155dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="255dp"
+            tools:ignore="MissingConstraints"></ImageView>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/redlefit"
+            android:layout_marginTop="155dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="255dp"
+            tools:ignore="MissingConstraints"></ImageView>
+
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/dpd"
+            android:layout_marginTop="230dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="255dp"
+            tools:ignore="MissingConstraints"></ImageView>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/greenright"
+            android:layout_marginTop="230dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="250dp"
+            tools:ignore="MissingConstraints"></ImageView>
+
+        <com.mlg.obu.Utils.LEDView
+            android:id="@+id/led3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="310dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="270dp"
+            >
+        </com.mlg.obu.Utils.LEDView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginTop="380dp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="时速建议"
+            android:textSize="16dp"
+            android:textColor="#1e1e1e"
+            tools:ignore="MissingConstraints"></TextView>
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/speed"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="410dp"
+            tools:ignore="MissingConstraints"></ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="40"
+            android:textSize="25dp"
+            android:textColor="#fff"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="420dp"
+            android:layout_marginLeft="80dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            tools:ignore="MissingConstraints"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Km/h"
+            android:textSize="15dp"
+            android:textColor="#fff"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="450dp"
+            android:layout_marginLeft="80dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            tools:ignore="MissingConstraints"></TextView>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="100"
+            android:textSize="25dp"
+            android:textColor="#fff"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="420dp"
+            android:layout_marginLeft="160dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            tools:ignore="MissingConstraints"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Km/h"
+            android:textSize="15dp"
+            android:textColor="#fff"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="450dp"
+            android:layout_marginLeft="166dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            tools:ignore="MissingConstraints"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="50"
+            android:textSize="25dp"
+            android:textColor="#fff"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="420dp"
+            android:layout_marginLeft="250dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            tools:ignore="MissingConstraints"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Km/h"
+            android:textSize="15dp"
+            android:textColor="#fff"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="450dp"
+            android:layout_marginLeft="255dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            tools:ignore="MissingConstraints"></TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginTop="500dp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_height=  "wrap_content"
+            android:gravity="center"
+            android:text="时速建议"
+            android:textSize="16dp"
+            android:textColor="#1e1e1e"
+            tools:ignore="MissingConstraints"></TextView>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:textSize="70dp"
+            android:text="128"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="530dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="50dp"
+            tools:ignore="MissingConstraints"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Km/h"
+            android:textSize="15dp"
+            android:textColor="#3e3e3e"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="610dp"
+            android:layout_marginLeft="100dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            tools:ignore="MissingConstraints"></TextView>
+
+
+
+
+        <ImageView
+            android:src="@mipmap/hongquan"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginRight="60dp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="540dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingConstraints"></ImageView>
+
+
+
+        <TextView
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginRight="77dp"
+            android:textSize="35dp"
+            android:text="80"
+            android:textStyle="bold"
+            android:textColor="#000"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="545dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingConstraints"></TextView>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Km/h"
+            android:textSize="15dp"
+            android:textColor="#3e3e3e"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginRight="75dp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="580dp"
+            tools:ignore="MissingConstraints"></TextView>
+
+
+        &lt;!&ndash; <ImageView
+             app:layout_constraintRight_toRightOf="parent"
+             android:src="@mipmap/address"
+             app:layout_constraintBottom_toBottomOf="parent"
+             android:layout_marginRight="110dp"
+             android:layout_marginBottom="30dp"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             tools:ignore="MissingConstraints">
+         </ImageView>
+
+         <ImageView
+             app:layout_constraintRight_toRightOf="parent"
+             android:src="@mipmap/my"
+             app:layout_constraintBottom_toBottomOf="parent"
+             android:layout_marginRight="70dp"
+             android:layout_marginBottom="30dp"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             tools:ignore="MissingConstraints">
+
+         </ImageView>
+
+         <ImageView
+             app:layout_constraintRight_toRightOf="parent"
+             android:src="@mipmap/load"
+             app:layout_constraintBottom_toBottomOf="parent"
+             android:layout_marginRight="30dp"
+             android:layout_marginBottom="30dp"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             tools:ignore="MissingConstraints">
+
+         </ImageView>
+ &ndash;&gt;
+
+    </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    tools:context=".BlueTooTh.MainBLEActivity">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="#000000"
+            android:text="设备列表"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_alignParentTop="true"/>
+
+        <com.mlg.obu.BlueTooTh.view.PullToRefreshFrameLayout
+            android:id="@+id/pulllayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/title"
+            custom:has_header="true"
+            custom:has_footer="false"
+            custom:has_shadow="false"
+            custom:has_divider="true"/>
+</RelativeLayout>
